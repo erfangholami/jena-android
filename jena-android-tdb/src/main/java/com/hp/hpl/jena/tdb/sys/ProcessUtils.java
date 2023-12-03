@@ -18,6 +18,8 @@
 
 package com.hp.hpl.jena.tdb.sys;
 
+import org.apache.jena.tdb.sys.SystemTDB;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

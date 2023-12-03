@@ -7,13 +7,30 @@
   <version>2.0</version>
 
   <properties>
-    <jdk.version>1.7</jdk.version>
+    <jdk.version>11</jdk.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <ver.jena>2.13.0</ver.jena>
-    <ver.iri>1.1.2</ver.iri>
-    <ver.tdb>1.1.2</ver.tdb>
-    <ver.text>1.1.2</ver.text>
-    <ver.spatial>1.1.2</ver.spatial>
+
+    <ver.httpcomponents.httpclient>5.2.3</ver.httpcomponents.httpclient>
+    <ver.httpcomponents.httpclient.cache>5.2.3</ver.httpcomponents.httpclient.cache>
+    <ver.httpcomponents.android>5.2.3</ver.httpcomponents.android>
+
+    <ver.jena>4.10.0</ver.jena>
+    <ver.jena.arq>4.10.0</ver.jena.arq>
+    <ver.jena.android.arq>4.10.0</ver.jena.android.arq>
+    <ver.jena.core>4.10.0</ver.jena.core>
+    <ver.jena.android.core>4.10.0</ver.jena.android.core>
+    <ver.jena.iri>4.10.0</ver.jena.iri>
+    <ver.jena.android.iri>4.10.0</ver.jena.android.iri>
+    <ver.jena.android.jars>4.10.0</ver.jena.android.jars>
+    <ver.jena.spatial>3.12.0</ver.jena.spatial>
+    <ver.jena.android.spatial>3.12.0</ver.jena.android.spatial>
+    <ver.jena.tdb>4.10.0</ver.jena.tdb>
+    <ver.jena.android.tdb>4.10.0</ver.jena.android.tdb>
+    <ver.jena.text>4.10.0</ver.jena.text>
+    <ver.jena.android.text>4.10.0</ver.jena.android.text>
+
+    <ver.xerces>2.12.2</ver.xerces>
+    <ver.xerces-android>2.12.2</ver.xerces-android>
   </properties>
 
   <build>
@@ -22,7 +39,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3</version>
+        <version>3.11.0</version>
         <configuration>
           <encoding>UTF-8</encoding>
           <source>${jdk.version}</source>
@@ -38,7 +55,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-shade-plugin</artifactId>
-          <version>2.3</version>
+          <version>3.5.1</version>
           <configuration>
             <relocations>
               <!-- Repackage StAX because it's a core java namespace 

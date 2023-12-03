@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jena-android-core</artifactId>
-  <version>2.13.0</version>
+  <version>${ver.jena.android.core}</version>
 
   <parent>
     <groupId>mobi.seus.jena</groupId>
@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.apache.jena</groupId>
       <artifactId>jena-core</artifactId>
-      <version>${ver.jena}</version>
+      <version>${ver.jena.core}</version>
       <type>jar</type>
       <exclusions>
         <exclusion>
@@ -33,13 +33,13 @@
     <dependency>
       <groupId>mobi.seus.jena</groupId>
       <artifactId>xerces-android</artifactId>
-      <version>2.11.0</version>
+      <version>${ver.xerces-android}</version>
     </dependency>
 
     <dependency>
       <groupId>mobi.seus.jena</groupId>
       <artifactId>jena-android-iri</artifactId>
-      <version>${ver.iri}</version>
+      <version>${ver.jena.android.iri}</version>
     </dependency>
 
   </dependencies>

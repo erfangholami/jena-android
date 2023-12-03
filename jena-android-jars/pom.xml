@@ -5,7 +5,7 @@ Dependency project that just copies the jars of all Jena modules for convenience
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jena-android-jars</artifactId>
-  <version>2.13.0</version>
+  <version>${ver.jena.android.jars}</version>
 
   <parent>
     <groupId>mobi.seus.jena</groupId>
@@ -18,13 +18,13 @@ Dependency project that just copies the jars of all Jena modules for convenience
     <dependency>
       <groupId>mobi.seus.jena</groupId>
       <artifactId>jena-android-tdb</artifactId>
-      <version>${ver.tdb}</version>
+      <version>${ver.jena.android.tdb}</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.jena</groupId>
       <artifactId>jena-text</artifactId>
-      <version>${ver.text}</version>
+      <version>${ver.jena.text}</version>
       <exclusions>
         <exclusion>
           <artifactId>apache-jena-libs</artifactId>
@@ -36,7 +36,7 @@ Dependency project that just copies the jars of all Jena modules for convenience
     <dependency>
       <groupId>org.apache.jena</groupId>
       <artifactId>jena-spatial</artifactId>
-      <version>${ver.spatial}</version>
+      <version>${ver.jena.spatial}</version>
       <exclusions>
         <exclusion>
           <artifactId>apache-jena-libs</artifactId>

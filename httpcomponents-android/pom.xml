@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-	<artifactId>httpcomponents-android</artifactId>
-  <version>4.2.6</version>
+  <artifactId>httpcomponents-android</artifactId>
+  <version>${ver.httpcomponents.android}</version>
 
   <parent>
     <groupId>mobi.seus.jena</groupId>
@@ -13,9 +13,9 @@
   <dependencies>
 
   <dependency>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>httpclient</artifactId>
-    <version>4.2.6</version>
+    <groupId>org.apache.httpcomponents.client5</groupId>
+    <artifactId>httpclient5</artifactId>
+    <version>${ver.httpcomponents.httpclient}</version>
     <exclusions>
       <!-- commons logging is already in the android sdk -->
       <exclusion>
@@ -25,9 +25,9 @@
     </exclusions>
   </dependency>
   <dependency>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>httpclient-cache</artifactId>
-    <version>4.2.6</version>
+    <groupId>org.apache.httpcomponents.client5</groupId>
+    <artifactId>httpclient5-cache</artifactId>
+    <version>${ver.httpcomponents.httpclient.cache}</version>
     <exclusions>
       <exclusion>
         <artifactId>commons-logging</artifactId>
